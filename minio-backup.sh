@@ -76,4 +76,3 @@ find "$DATA_BACKUP_DIR_ARCHIVES" -name "minio_backup_*.tar.gz" -type f -mtime +7
 find "$DATA_BACKUP_DIR_ARCHIVES" -name "minio_backup_log_*.log" -type f -mtime +7 -exec rm -v {} \;
 
 echo "✅ Sauvegarde complète terminée et rotation effectuée."
-
