@@ -4,3 +4,10 @@ Cette commande vérifie si les points de montage XFS et EXT sont fonctionnels av
 
 ## Minio maintenance
 Ces commandes permettent de sauvegarder les buckets, users, groups, policies et roles de MinIO. Elles sont utilisées pour effectuer des opérations de sauvegarde ou de restauration.
+
+## Step Manager 
+### Installation
+
+#### Server 
+
+#### Client 
