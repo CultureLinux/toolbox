@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Verify script is run as root
+if [[ $EUID -ne 0 ]]; then
+   echo "Error: This script must be run as root" >&2
+   exit 1
+fi
+
 current=$(uname -r)
 next=$(basename "$(grubby --default-kernel)" | sed 's/^vmlinuz-//')
 latest=$(rpm -q --last kernel | awk 'NR==1{sub(/^kernel-/,"",$1); print $1}')
